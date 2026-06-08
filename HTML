@@ -1,0 +1,18 @@
+<input type="text" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Sign In</button>
+
+<script>
+function login() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    if (email === "admin@novawallet.com" &&
+        password === "Nova2026!") {
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Invalid email or password");
+    }
+}
+</script>
